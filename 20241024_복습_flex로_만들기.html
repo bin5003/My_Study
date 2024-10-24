@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내가 만드는 가로 유형 flex 써보기</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+        color: #3f3f3f;
+        text-align: center;
+      }
+      .wrap {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #bd5fcd;
+        line-height: 100px;
+      }
+      header h1 {
+        width: 200px;
+        font-size: 18px;
+        font-weight: normal;
+      }
+      header nav {
+        width: 1000px;
+      }
+      .container {
+        width: 100%;
+        height: 700px;
+        background-color: aliceblue;
+      }
+      .imageBox {
+        width: 100%;
+        height: 400px;
+        background-color: rgb(169, 255, 255);
+        line-height: 400px;
+      }
+      .content {
+        display: flex;
+        height: 300px;
+        line-height: 300px;
+      }
+      .content > div {
+        width: calc(100% / 3);
+      }
+      .content div.con1 {
+        background-color: #ffaaaa;
+      }
+      .content div.con2 {
+        background-color: #ff6464;
+      }
+      .content div.con3 {
+        background-color: #ff3d3d;
+      }
+      footer {
+        display: flex;
+        height: 100px;
+        line-height: 100px;
+      }
+      footer .ftLogo {
+        width: 200px;
+        background-color: #ffdd87;
+      }
+      footer .copy {
+        width: 800px;
+        background-color: #ffce51;
+      }
+      footer .sns {
+        width: 200px;
+        background-color: #c38c00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>로고</h1>
+        <nav>메뉴</nav>
+      </header>
+      <section class="container">
+        <div class="imageBox">이미지슬라이드</div>
+        <section class="content">
+          <div class="con1">공지사항</div>
+          <div class="con2">갤러리</div>
+          <div class="con3">팝업</div>
+        </section>
+      </section>
+      <footer>
+        <div class="ftLogo">로고</div>
+        <div class="copy">CopyRight</div>
+        <div class="sns">SNS</div>
+      </footer>
+    </div>
+  </body>
+</html>
